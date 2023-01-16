@@ -2,7 +2,7 @@ body {
   background-color: #212121;
 }
 
-.this_sucks {
+.main_divs {
   display: flex;
   align-items: center;
   justify-content: center;
