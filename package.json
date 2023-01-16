@@ -19,6 +19,8 @@
   "homepage": "https://github.com/GannonHiggins/Website#readme",
   "dependencies": {
     "sass": "^1.57.1"
+  },
+  "devDependencies": {
+    "prettier": "2.8.3"
   }
 }
-
