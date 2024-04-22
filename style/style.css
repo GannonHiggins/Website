@@ -1,5 +1,5 @@
 body {
-  background-color: #212121;
+  background-color: darkgray;
 }
 
 .main_divs {
@@ -11,7 +11,7 @@ body {
 }
 
 .buttons {
-  background-color: #ced4da;
+  background-color: lightgray;
   float: left;
   height: 40rem;
   width: 50rem;
@@ -20,7 +20,6 @@ body {
 }
 
 .photo {
-  background-color: #ced4da;
   float: left;
   height: 50rem;
   width: 50rem;
@@ -28,8 +27,8 @@ body {
 }
 
 .child_buttons {
-  --bg: #ced4ce;
-  --hover-bg: #ced4ce;
+  /*--bg: #8d8d8d;*/
+  --hover-bg: lightgray;
   --hover-text: #000;
   color: #212121;
   border: 1px solid #000;
