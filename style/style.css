@@ -1,5 +1,5 @@
 body {
-  background-color: darkgray;
+  background-color: #EAE0D5;
 }
 
 .main_divs {
@@ -11,7 +11,8 @@ body {
 }
 
 .buttons {
-  background-color: lightgray;
+  /* background-color: lightgray; */
+  background-color: #EAE0D5;
   float: left;
   height: 40rem;
   width: 50rem;
