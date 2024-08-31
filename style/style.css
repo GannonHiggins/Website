@@ -1,19 +1,77 @@
 body {
-  background-color: #212121;
+  background-color: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 .main_divs {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  max-width: 1300px;
+  width: 100%;
+  padding: 2rem;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1200px; 
+}
+
+.about-me {
+    max-width: 700px; 
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.about-me img {
+    width: 300px; 
+    height: 300px; 
+    object-fit: cover;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-me-content {
+    text-align: center;
+    width: 100%;  
+}
+
+.about-me h2 {
+    font-size: 22px;
+    color: #4a5568;
+    margin-bottom: 12px;
+}
+
+.about-me p {
+    font-size: 16px;  
+    line-height: 1.6;  
+    color: #718096;
+    margin-bottom: 12px;  
+    text-align: left;  
 }
 
 .buttons {
-  float: left;
-  height: 40rem;
-  width: 50rem;
-  margin: 10rem;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: auto;
+  justify-content: space-between;  
+  height: 100%; 
 }
 
 .photo {
@@ -25,25 +83,28 @@ body {
 }
 
 .child_buttons {
-  --bg: #ced4ce;
-  --hover-bg: #ced4ce;
-  --hover-text: #000;
-  color: #212121;
-  border: 1px solid #000;
+  --bg: #e2e8f0;
+  --hover-bg: #cbd5e0;
+  --hover-text: #2d3748;
+  color: #4a5568;
+  border: 1px solid #cbd5e0;
   border-radius: 4px;
-  padding: 0.8em 2em;
+  padding: 1em 1.5em;
   background: var(--bg);
   transition: 0.2s;
-  height: 3rem;
+  height: 4rem;
   width: 30rem;
   text-align: center;
-  margin: 2.5em;
-  margin-left: 10rem;
+  margin: 1em 0;
+  display: block;
+  font-size: 1.1rem;
+  white-space: nowrap;  
+  overflow: hidden;  
+  text-overflow: ellipsis;  
 }
 
 .child_buttons:hover {
   color: var(--hover-text);
-  transform: translate(-0.25rem, -0.25rem);
   background: var(--hover-bg);
   box-shadow: 0.25rem 0.25rem var(--bg);
 }
@@ -51,4 +112,8 @@ body {
 .child_buttons:active {
   transform: translate(0);
   box-shadow: none;
-}/*# sourceMappingURL=style.css.map */
+}
+
+.buttons > .child_buttons:not(:last-child) {
+  margin-bottom: 2rem;
+}

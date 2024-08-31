@@ -2,19 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Form</title>
+  <link rel="stylesheet" href="../style/contact.css">
 </head>
 <body>
-
-	<form action="http://formsubmit.co/gannonhiggins@gmail.com" method="POST">
-		<input type="hidden" name="_subject" value="New Email from Website">
-		<input type="email" name="email" placeholder="Email Address">
-		<input type="hidden" name="_next" value="https://gannon-higgins.com/html/thankyou.html">
-		<input type="text" name="name" placeholder="Write your message here" required>
-		<button type="Submit">Send</button>
-
-	</form>
-
-
+  <div class="container">
+    <h1>Contact Form</h1>
+    <form action="https://formsubmit.co/gannonhiggins@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="New Email from Website">
+      <input type="email" name="email" placeholder="Your Email Address" required>
+      <input type="text" name="name" placeholder="Your Name" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <input type="hidden" name="_next" value="https://gannon-higgins.com/html/thankyou.html"> <!-- will need to change this to local host when website is on a server-->
+      <button type="submit">Send</button>
+    </form>
+  </div>
 </body>
 </html>
