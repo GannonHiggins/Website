@@ -1,18 +1,14 @@
 body {
-  background-color: #EAE0D5;
+  background-color: #212121;
 }
 
 .main_divs {
   display: flex;
   align-items: center;
   justify-content: center;
-  resize: both;
-  overflow: auto;
 }
 
 .buttons {
-  /* background-color: lightgray; */
-  background-color: #EAE0D5;
   float: left;
   height: 40rem;
   width: 50rem;
@@ -21,6 +17,7 @@ body {
 }
 
 .photo {
+  background-color: #ced4da;
   float: left;
   height: 50rem;
   width: 50rem;
@@ -28,8 +25,8 @@ body {
 }
 
 .child_buttons {
-  /*--bg: #8d8d8d;*/
-  --hover-bg: lightgray;
+  --bg: #ced4ce;
+  --hover-bg: #ced4ce;
   --hover-text: #000;
   color: #212121;
   border: 1px solid #000;
