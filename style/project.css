@@ -35,24 +35,36 @@ header h1 {
 }
 
 .project-item {
-    background: #fff;
-    padding: 20px;
     margin-bottom: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
 }
 
-.github-link {
-    display: inline-block;
-    background: #333;
-    color: #fff;
-    padding: 10px 15px;
+.project-item:hover {
+    transform: translateY(-5px);
+}
+
+.project-link {
+    display: block;
+    padding: 20px;
+    background-color: #ffffff;
+    color: #333333;
     text-decoration: none;
     border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease;
 }
 
-.github-link:hover {
-    background: #555;
+.project-link:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.project-link h2 {
+    margin-top: 0;
+    color: #4a5568;
+}
+
+.project-link p {
+    margin-bottom: 0;
 }
 
 .return-button {
